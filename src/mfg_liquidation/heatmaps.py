@@ -1,4 +1,4 @@
-"""Heatmap sensitivity analysis for Chapter 5.
+"""Heatmap analysis for Chapter 5.
 
 The parameter ranges, numerical settings and visual conventions reproduce the
 latest heatmap notebook supplied with the thesis project.  Raw result CSV files
@@ -208,7 +208,6 @@ _REFERENCE_CACHE: dict[tuple, dict] = {}
 
 def solve_homogeneous_reference_for_population(gamma_value, a_value, qbar0_value):
     """Solve the two-copy homogeneous reference used by the heatmap analysis."""
-
     key = (
         round(float(gamma_value), 14),
         round(float(a_value), 14),

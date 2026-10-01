@@ -82,7 +82,7 @@ def build_thesis_table(
     reference_qbar=None,
     reference_metrics=None,
 ) -> pd.DataFrame:
-    """Build a table with the same rows and column order as the thesis."""
+    """Build the results table"""
 
     columns = {}
     p = qbar.shape[0]
@@ -102,7 +102,7 @@ def build_thesis_table(
 
 
 def table_to_tsv(table: pd.DataFrame, include_headers: bool = False) -> str:
-    """Return tab-separated text convenient for direct pasting into Word."""
+    """Return tab-separated text """
 
     lines = []
     if include_headers:

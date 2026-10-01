@@ -116,7 +116,7 @@ def plot_inventory_trajectories(
     reference_qbar: np.ndarray | None = None,
     filename: str | Path | None = None,
 ):
-    """Plot mean inventories with the same visual design as the thesis figures."""
+    """Plot mean inventories."""
 
     setup_plot_theme()
     p = qbar.shape[0]

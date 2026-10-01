@@ -6,8 +6,6 @@ import numpy as np
 
 
 def integrate_trapezoid(y, x, axis=0):
-    """Trapezoidal integration with a compatibility fallback."""
-
     if hasattr(np, "trapezoid"):
         return np.trapezoid(y, x=x, axis=axis)
     return np.trapz(y, x=x, axis=axis)
@@ -23,15 +21,7 @@ def compute_execution_metrics(
     liquidity: np.ndarray,
     sigma_matrix: np.ndarray,
 ) -> dict:
-    """Compute the three diagnostics and auxiliary execution quantities.
-    For each asset ``j`` the permanent price displacement is
-    ``Delta S_perm,j(t) = alpha_j * integral_0^t mu_j(s) ds``.
-    The unit permanent-impact index and unit temporary cost are then
-    ``- integral v_j Delta S_perm,j dt / integral |v_j| dt``
-    and
-    ``integral eta_j v_j^2 / V_j dt / integral |v_j| dt``.
-    Price-risk exposure is normalized by the exposure obtained by keeping the
-    initial inventory unchanged over the entire horizon.
+    """Compute the three diagnostics execution quantities.
     """
 
     t_grid = np.asarray(t_grid, dtype=float)

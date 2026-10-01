@@ -2,8 +2,7 @@
 
 The implementation follows the discrete forward-backward system used in the
 thesis.  The sparse linear system is factorized once for a fixed scenario and
-reused across fixed-point iterations; this changes only the linear algebra
-implementation, not the discretized equations.
+reused across fixed-point iterations.
 """
 
 from __future__ import annotations
@@ -241,13 +240,7 @@ def solve_multi_population_fixed_point(
     max_iter: int = 1000,
     require_convergence: bool = True,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray, FixedPointInfo]:
-    """Solve the fixed point on the aggregate flow.
-    The discrete equations are exactly those used in Chapter 4 of the thesis:
-    ``q_n = q_{n-1} + dt * v_{n-1}``
-    ``v_n - v_{n-1} = dt * (2 gamma mathbb_V Sigma q_{n-1}
-    - 2 mathbb_V Lambda mu_{n-1})``
-    with ``v_N + 4 mathbb_V A q_N = 0``.
-    """
+    """Solve the fixed point on the aggregate flow."""
 
     p, d, rho = _validate_inputs(
         qbar0_list,

@@ -16,6 +16,7 @@ dependencies = [
     "scipy>=1.11",
     "pandas>=2.0",
     "matplotlib>=3.8",
+    "cycler>=0.12",
 ]
 
 [project.optional-dependencies]
@@ -23,8 +24,6 @@ dev = [
     "notebook>=7.0",
     "ipython>=9.0",
     "ipykernel>=7.0",
-    "pytest>=8.0",
-    "ruff>=0.9",
 ]
 
 [tool.setuptools.packages.find]

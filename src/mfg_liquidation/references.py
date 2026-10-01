@@ -24,14 +24,7 @@ def solve_homogeneous_references(
     epsilon: float,
     max_iter: int,
 ) -> dict:
-    """Construct the matched homogeneous reference for every population.
-
-    For population ``i``, every group in the reference has the parameters of
-    population ``i`` while the original population-mass structure is preserved.
-    Because all copies are identical, the common reference speed is independent
-    of the particular mass split, but retaining the masses matches the thesis
-    comparison protocol exactly.
-    """
+    """Construct the matched homogeneous reference for every population. """
 
     p = len(qbar0_list)
     d = len(np.asarray(qbar0_list[0]))
