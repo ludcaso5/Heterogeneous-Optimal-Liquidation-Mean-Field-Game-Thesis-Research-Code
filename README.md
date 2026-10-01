@@ -135,7 +135,11 @@ The numerical core is defined in one place and imported by all experiments. Plot
 
 ## Citation
 
-Citation metadata are provided in `CITATION.cff`. 
+Citation metadata are provided in `CITATION.cff`.
+
+Version 1.0.0 is permanently archived on Zenodo:
+
+**DOI:** https://doi.org/10.5281/zenodo.23091555
 
 ## License
 
