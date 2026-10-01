@@ -1,0 +1,9 @@
+# Versions used to validate the publication package in the preparation environment.
+numpy==2.3.5
+scipy==1.17.0
+pandas==2.2.3
+matplotlib==3.10.8
+notebook==7.5.3
+ipython==9.14.0
+ipykernel==7.2.0
+pytest==9.0.2

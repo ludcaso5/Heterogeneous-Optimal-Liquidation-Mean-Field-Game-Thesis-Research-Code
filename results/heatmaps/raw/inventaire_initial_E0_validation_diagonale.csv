@@ -1,0 +1,5 @@
+﻿scenario,metric,max_abs_diagonal,within_tolerance
+inventaire_initial_E0,delta_pop1_permanent_impact_unit,0.0,True
+inventaire_initial_E0,delta_pop1_temporary_cost_unit,0.0,True
+inventaire_initial_E0,delta_pop1_risk_normalized,0.0,True
+inventaire_initial_E0,delta_pop1_abs_final_inventory,0.0,True

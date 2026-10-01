@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite this repository and the associated master's thesis."
+title: "Heterogeneous Optimal Liquidation Mean-Field Game — Thesis Research Code"
+type: software
+authors:
+  - family-names: "Casaubon"
+    given-names: "Ludwig"
+version: 1.0.0
+date-released: 2026-09-19
+keywords:
+  - mean field games
+  - optimal liquidation
+  - market impact
+  - heterogeneous populations
+  - financial engineering
