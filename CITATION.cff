@@ -6,6 +6,7 @@ authors:
   - family-names: "Casaubon"
     given-names: "Ludwig"
 version: 1.0.0
+doi: "10.5281/zenodo.23091555"
 date-released: 2026-10-01
 keywords:
   - mean field games
